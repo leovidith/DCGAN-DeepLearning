@@ -12,7 +12,6 @@
 | **4** | **Discriminator**         | - Classifies images as real (Fashion MNIST) or fake (generated).<br>- Uses convolutional layers and Leaky ReLU activation.<br>- Final output: **Sigmoid** (real vs. fake). |
 | **5** | **Training Process**      | - **Epochs**: 50-200.<br>- Optimizer: **Adam** with learning rate ~0.0002.<br>- **Mini-batch size**: 64.<br>- Loss function: **Binary Cross-Entropy** for both models. |
 | **6** | **Image Generation**      | - Noise vector (100 dimensions) is input to the generator.<br>- Generated images rescaled from [-1, 1] to [0, 255].<br>- Image resolution: 64x64 pixels. |
-| **7** | **Evaluation Metric**     | **Inception Score (IS)**: Measures image quality and diversity.<br>- Images resized to 299x299 for evaluation.<br>- Ideal IS score: 9-10, with higher scores indicating better quality. |
 
 ## **Project Overview**
 This project implements a **Deep Convolutional Generative Adversarial Network (DCGAN)** to generate realistic images based on the **Fashion MNIST** dataset. The model learns to produce images that resemble the distribution of Fashion MNIST images, which include items like clothing, shoes, and accessories. This demonstrates the application of GANs for image synthesis, data augmentation, and creative image generation.
